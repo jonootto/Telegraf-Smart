@@ -1,2 +1,4 @@
 # Telegraf-Smart
-Ad smart to telegraf
+Add smart to telegraf
+
+Published to dockerhub as jonootto/telegraf-smart
