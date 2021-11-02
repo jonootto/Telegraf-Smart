@@ -1,4 +1,5 @@
 #Add smartmontools
 FROM telegraf:latest
-RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends smartmontools && \
-    sudo rm -rf /var/lib/apt/lists/*
+USER root
+RUN  apt-get update && apt-get install -y --no-install-recommends smartmontools && rm -rf /var/lib/apt/lists/*
+USER 1001
